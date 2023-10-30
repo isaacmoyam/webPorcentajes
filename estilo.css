@@ -2,10 +2,6 @@
 
 /*LAYOUT*/
 
-html{
-	width:1280px;
-}
-
 body{
 	width:100%; /* contenido 1280px, contenedor: html(1280px) => 100%*/
 	background-image:url("imagenes/fondo.jpg");
@@ -30,41 +26,46 @@ header img{
 
 header nav ul li{
 	float:left; 
-	margin:15px;
+	margin:1.171875%; /* contenido: 15px, contenedor: header(1280px) => 1280px = 100% 15px = 1.171875% */
 	list-style-type:none;
 }
 
 header nav ul li:first-child{ 
-	margin:15px 60px 0 320px;
+	margin:1.171875% 4.6875% 0 25%; /* contenido: 15px, contenedor: header(1280px) => 1280px = 100% 15px = 1.171875% */
+								    /* contenido: 60px, contenedor: header(1280px) => 1280px = 100% 60px = 4.6875% */
+								    /* contenido: 320px, contenedor: header(1280px) => 1280px = 100% 320px = 25% */
 }
 
 #titulo h1{
 	width:63.63636%; /* contenido: 700px, contenedor: section(1100px) => 1100px = 100% 700px = 63.63636% */
 	float:left;
-	font-size:50px;
-	margin: 10px 30px 0 10px ;
+	font-size:3.90625vw; /* 50px = 3.90625vw */
+	margin: 0.909090909% 2.727272% 0 0.909090909% ; /* contenido: 10px, contenedor: section(1100px) => 1100px = 100% 10px = 0.909090909% */
+							   						/* contenido: 30px, contenedor: section(1100px) => 1100px = 100% 30px = 2.727272% */
+							   						/* contenido: 10px, contenedor: section(1100px) => 1100px = 100% 10px = 0.909090909%  */
 	color:#3216B0;
 	text-align:center;
 }
 
 #titulo img{
 	width:30.90909%; /* contenido: 340px, contenedor: section(1100px) => 1100px = 100% 340px = 30.90909% */
-	margin: 10px;
+	margin: 0.909090909%; /* contenido: 10px, contenedor: section(1100px) => 1100px = 100% 10px = 0.909090909% */
 }
 
 article{
 	background-color:rgba(255,255,255,0.29);
 	width:90.6250%; /* contenido: 1160px, contenedor: body(1280px) => 1280px = 100% 1160px = 90.6250% */
 	padding:1.56250%; /* contenido: 20px, contenedor: body(1280px) => 1280px = 100% 20px = 1.56250% */
-	margin:30px 40px;
+	margin:2.343750% 3.125%; /* contenido: 30px, contenedor: body(1280px) => 1280px = 100% 30px = 2.343750% */
+					         /* contenido: 40px, contenedor: body(1280px) => 1280px = 100% 40px = 3.125% */
 	border-radius:10px;
 	font-family:tahoma;
 }
 
 article section{
 	width:94.8275862069%; /* contenido: 1100px, contenedor: article(1160px) => 1160px = 100% 1100px = 94.8275862069% */
-	margin:0 auto 30px;
-	padding:15px;
+	margin:0 auto 2.586206897%; /* contenido: 30px, contenedor: article(1160px) => 1160px = 100% 30px = 2.586206897% */
+	padding:1.293103448%; /* contenido: 15px, contenedor: article(1160px) => 1160px = 100% 15px = 1.293103448% */
 	border-radius:10px;
 	background-color:white;
 }
@@ -76,13 +77,13 @@ article section{
 
 #consecuencias img{
 	width:20%; /* contenido: 220px, contenedor: section(1100px) => 1100px = 100% 220px = 20% */
-	margin:0 0 0px 80px;
+	margin:0 0 0 7.272727%; /* contenido: 80px, contenedor: section(1100px) => 1100px = 100% 80px = 7.272727% */
 }
 
 table{
 	width:50%; /* contenido: 550px, contenedor: section(1100px) => 1100px = 100% 550px = 50% */
 	border-collapse:collapse; 
-	margin:10px auto;
+	margin:0.909090% auto; /* contenido: 10px, contenedor: section(1100px) => 1100px = 100% 10px = 0.909090% */
 }
 
 footer{
@@ -91,7 +92,7 @@ footer{
 	padding:0.78125%; /* contenido: 10px, contenedor: body(1280px) => 1280px = 100% 10px = 0.78125% */
 	color:white;
 	font-family:arial;
-	margin:0 40px;
+	margin:0 3.125%; /* contenido: 40px, contenedor: body(1280px) => 1280px = 100% 40px = 3.125% */
 }
 
 form{
@@ -112,7 +113,8 @@ header nav ul li a{
 	text-decoration:none; 
 	color:white; 
 	background-color:#2255a8;
-	padding:15px 30px; /* NO TENGO CLARO COMO PASAR ESTE PADDING A PORCENTAJES */
+	padding:15px 30px; /* contenido: 15px, contenedor: header(1280px) => 1280px = 100% 15px = 1.171875%  EL RESULTADO NO ES EL ESPERADO EN PORCENTAJES */
+					   /* contenido: 30px, contenedor: header(1280px) => 1280px = 100% 30px = 2.34375%  EL RESULTADO NO ES EL ESPERADO EN PORCENTAJES */
 	border-radius:9px;
 }
 
@@ -123,7 +125,7 @@ header nav ul li a:hover{
 /*TITULOS DE APARTADOS*/
 
 .h1apartado{
-	font-size:20px;
+	font-size:1.5625vw; /* 20px = 1.5625vw */
 	color:orange;
 }
 
@@ -131,7 +133,7 @@ header nav ul li a:hover{
 
 p{
 	font-family:georgia;
-	font-size:13px;  
+	font-size:1.015625vw; /* 13px = 1.015625vw */
 	text-align:justify; 
 	padding:0.7272727%; /* contenido: 8px, contenedor: section(1100px) => 1100px = 100% 8px = 0.7272727% */
 }
@@ -153,7 +155,7 @@ th{
 footer img{
 	width:12.7118644068%; /* contenido: 150px, contenedor: footer(1180px) => 1180px = 100% 150px = 12.7118644068% */
 	float:left;
-	margin:0 140px 0 0;
+	margin:0 11.864406780% 0 0; /* contenido: 140px, contenedor: footer(1180px) => 1180px = 100% 140px = 11.864406780% */
 }
 
 form input,textarea{
